@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt1
 import matplotlib.pyplot as plt2
 import sys
 import numpy
-df = pd.read_csv("C:\\Users\\Vineeth\\Desktop\\lmao\\pan.csv")
+df = pd.read_csv("pan.csv")
 weat1=df['StateName']=="MAHARASHTRA"
 weat2=df['StateName']=="MADHYA PRADESH"
 weat3=df['Sector']=="AGRICULTURE"

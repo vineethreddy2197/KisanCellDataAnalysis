@@ -5,8 +5,7 @@ print('3->Statewise Analysis')
 print('4->Each State Analysis')
 print('5->Each Category Analysis')
 print('6->Each Query Analysis')
-print('7->Each State Analysis')
-print('8->Rainfall Analysis')
+print('7->Rainfall Analysis')
 x=int(input('Enter : '))
 if x==1:
     os.system('python crop.py')
@@ -20,7 +19,5 @@ elif x==5:
     os.system('python category.py')
 elif x==6:
     os.system('python query.py')
-elif x==7:
-    os.system('python state.py')
 else:
     os.system('python rainfall.py')
