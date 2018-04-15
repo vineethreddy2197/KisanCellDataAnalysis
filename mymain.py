@@ -13,11 +13,11 @@ elif x==2:
     os.system('python season.py')
 elif x==3:
     os.system('python statewise.py')
-elif:
+elif x==4:
     os.system('python state.py')
-elif:
+elif x==5:
     os.system('python category.py')
-elif:
+elif x==6:
     os.system('python query.py')
 else:
     os.system('python state.py')
