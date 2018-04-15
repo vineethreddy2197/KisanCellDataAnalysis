@@ -10,7 +10,7 @@ class myst:
     def __eq__(self, other):
         return self.name == other.name
 df = pd.read_csv("C:\\Users\\Vineeth\\Desktop\\lmao\\pan.csv")
-weat1=df['Crop']
+weat1=df['QueryType']
 sys.__stdout__ = sys.stdout
 arr=[]
 for i in range(0,len(weat1)):
@@ -20,9 +20,10 @@ for i in range(0,len(weat1)):
         arr[arr.index(v)].x=arr[arr.index(v)].x+1
     else:
         arr.append(v)
+        arr[arr.index(v)].x=arr[arr.index(v)].x+1
 c1=[w.x for w in arr]
 c2=[z.name for z in arr]
 plt.rc('font', size=5)
-plt.bar(c2,c1)
+plt.bar(c2,c1,align='center')
 plt.xticks(rotation=30)
 plt.show()
